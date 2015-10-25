@@ -1,3 +1,5 @@
+# 13195 の素因数は 5, 7, 13, 29 である.
+# 600851475143 の素因数のうち最大のものを求めよ.
 class Problem3
   def initialize(num)
     @num = num
@@ -36,4 +38,3 @@ calc = Problem3.new(600851475143)
 calc.execute
 p calc.prime_numbers
 p calc.result
-

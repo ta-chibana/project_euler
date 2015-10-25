@@ -1,4 +1,5 @@
 # 10001 番目の素数を求めよ.
+
 def prime_number numbers = [2], check_num = 3
   numbers.each do |prime|
     next if check_num % prime == 0
