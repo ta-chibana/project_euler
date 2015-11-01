@@ -4,14 +4,12 @@
 MAX_VALUE = 20
 
 def calc
-  (2..MAX_VALUE).reduce { |result, num| result *= factory(result, num) }
+  (2..MAX_VALUE).reduce { |result, num| result *= decision(result, num) }
 end
 
-def factory(result, next_num)
+def decision(result, next_num)
   if result % next_num != 0
-    (2..next_num).find do |div|
-      next_num % div == 0
-    end
+    (2..next_num).find { |div| next_num % div == 0 }
   else
     1
   end
