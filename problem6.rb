@@ -8,4 +8,4 @@ def calc &block
   result
 end
 
-p (calc{|arg| arg } ** 2) - calc{|arg| arg ** 2 }
+p (calc { |arg| arg } ** 2) - (calc { |arg| arg ** 2 })
