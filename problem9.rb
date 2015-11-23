@@ -4,11 +4,11 @@
 CONST = 1000
 
 def calc
-  1.upto(CONST) do |a|
-    (a + 1).upto(CONST) do |b|
-      (b + 1).upto(CONST) do |c|
+  (1..CONST).each do |a|
+    ((a + 1)..CONST).each do |b|
+      ((b + 1)..CONST).each do |c|
         if is_pythagorean?(a, b, c) && is_equal?(a, b, c)
-          return a * b * c
+          a * b * c
         end
       end
     end
