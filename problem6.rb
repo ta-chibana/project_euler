@@ -2,7 +2,7 @@
 
 def calc &block
   (1..100).reduce do |result, num|
-    result += block.call(num)
+    result + block.call(num)
   end
 end
 
