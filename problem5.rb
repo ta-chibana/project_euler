@@ -8,7 +8,7 @@ def calc
 end
 
 def decision(result, next_num)
-  unless result % next_num == 0
+  if result % next_num != 0
     (2..next_num).find { |div| next_num % div == 0 }
   else
     1
